@@ -7,7 +7,9 @@ authors = [
     { name = "Raymond Iziogba", email = "iziogbaraymond72@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "numpy>=2.5.5",
+]
 
 [project.scripts]
 vector-search-engine = "vector_search_engine:main"
@@ -15,3 +17,9 @@ vector-search-engine = "vector_search_engine:main"
 [build-system]
 requires = ["uv_build>=0.13.8,<0.14.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.5",
+]
