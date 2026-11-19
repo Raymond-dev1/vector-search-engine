@@ -13,6 +13,8 @@ dependencies = [
 
 [project.scripts]
 vector-search-engine = "vector_search_engine:main"
+playground = "vector_search_engine.playground:main"
+main = "vector_search_engine.main:main"
 
 [build-system]
 requires = ["uv_build>=0.13.8,<0.14.0"]
