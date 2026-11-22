@@ -6,7 +6,7 @@ class VectorStore:
         self.ids = []
 
     def add_vectors(self, vectors:np.ndarray, ids:list):
-        if self.vectors is None:
+        if self.vectors is None or len(self.vectors) == 0:
             self.vectors = vectors
         else:
             self.vectors = np.vstack([self.vectors, vectors])
